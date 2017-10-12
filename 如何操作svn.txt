@@ -1,0 +1,16 @@
+1. github创建数据库
+2. 安装tortoisesvn
+3. 本地创建代码仓库文件夹
+4. 进入本地代码仓库文件夹，右键svn checkout。用户名密码为github帐号的用户名密码。
+5. 本地代码仓库文件夹创建目录branches和trunk。trunk作为主开发分支，相当于github中的master分
+支。svn commit.
+6. 如果需要创建tags版本以及branches版本，trunk右键->branches/tasg->path:branches/v1.0 or tag/v1.0. svn commit.
+7.创建完成。
+
+第一项"Merge a range of revision"，这个类型的Merge已经介绍得很清楚，适用于将某个分支或主线上提交的多个revision间的变化合并到另外一个分支上。
+
+合并：
+1. branches合并trunk上的代码：2. trunk合并branches上的代码：
+Merge type->Merge a range of revisions->from trunk. revision range to merge: specific range:1-> compare whitespaces-> merge
+
+Merge two different trees->from revision1 to revision head->merge
